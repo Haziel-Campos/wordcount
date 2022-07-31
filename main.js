@@ -4,6 +4,7 @@ var charCount = document.querySelector("#char")
 
 function getWords() {
     var i = input.value
+    i = i.replace("\n", " ")
     var c = i.split(' ').length;
     charCount.innerHTML = i.length
     if(i.length <= 0) return wordsCount.innerHTML = "0"
